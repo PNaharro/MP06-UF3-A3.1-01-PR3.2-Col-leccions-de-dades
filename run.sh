@@ -27,7 +27,7 @@ javaArgs="$@"
 javaArgsStr=$(printf "%q " "$javaArgs")
 
 # Construct argument for passing additional args to Java program
-execArgsForJava="-Dexec.args=\"$javaArgsStr\""
+execArgsForJava="-Dexec.args=$javaArgsStr"
 
 echo "Maven Main Class Argument: $mavenMainClassArg"
 echo "Java Program Arguments: $javaArgsStr"
